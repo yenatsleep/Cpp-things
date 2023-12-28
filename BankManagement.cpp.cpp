@@ -65,7 +65,7 @@ class BankManagement{
 					return &accounts[i];
 			}
 		}
-    }
+    	}
 };
 int main(){
 	
@@ -75,7 +75,7 @@ int main(){
 	do{
 		cout<<"\t\t Bank Management System"<<endl; //\t\t keep the line align
 		cout<<"\t\t\tMain Menu"<<endl;
-		cout<<"\t\t 1. Creat New Account"<<endl;
+		cout<<"\t\t 1. Create New Account"<<endl;
 		cout<<"\t\t 2. Show All Account"<<endl;
 		cout<<"\t\t 3. Search Account"<<endl;
 		cout<<"\t\t 4. Deposit Money"<<endl;
@@ -85,7 +85,7 @@ int main(){
 		cout<<"\t\t Enter Your Choice: ";  //customer pick between 1-6
 		cin>>choice;
 		switch(choice){
-//now start add in different cases 1-6
+//now start adding in different cases 1-6
 			case 1:{
 				string name;
 				int accountNum;
@@ -123,7 +123,7 @@ int main(){
 					account->deposit(amount);
 					cout<<"\t\t"<<amount<<" Deposit Successfully"<<endl;
 				}else{
-					cout<<"\t\t Acount Not Found"<<endl;
+					cout<<"\t\t Account Not Found"<<endl;
 				}
 				break;
 			}
@@ -139,7 +139,7 @@ int main(){
 					account->withdraw(amount);
 					
 				}else{
-					cout<<"\t\t Acount Not Found"<<endl;
+					cout<<"\t\t Account Not Found"<<endl;
 				}
 				break;
 			}
@@ -148,7 +148,7 @@ int main(){
 				break;
 			}
 	}
-	cout<<"\t\t Countinue or Exit [Yes/No] ??";
+	cout<<"\t\t Continue or Exit [Yes/No] ??";
 	cin>>op;
 		
 	}while(op == 'y'||op =='Y');
